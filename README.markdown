@@ -1,6 +1,7 @@
 # uploadd
 Minimal file upload daemon using [Rainbows](http://rainbows.rubyforge.org)
 
+Rails plugin here: [paperclip_uploadd](http://github.com/capotej/paperclip_uploadd)
 
 ### Installation
 
