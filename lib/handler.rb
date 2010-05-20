@@ -8,7 +8,7 @@ module Uploadd
     def initialize(app)
       @app = app
     end
-
+    
     def call(env)
       if env["REQUEST_METHOD"] == "PUT" or env["REQUEST_METHOD"] == "POST"
         if env['PATH_INFO'] == '/up'
@@ -16,7 +16,7 @@ module Uploadd
           if request.params["file"] and request.params["secret"] == SECRET
             uploaded_file = request.params["file"][:tempfile]
             filename = request.params["filename"]
-            FileUtils::mkdir_p("#{UPLOAD_DIR/#{File.dirname(filename)}")
+            FileUtils::mkdir_p("#{UPLOAD_DIR}/#{File.dirname(filename)}")
             File.open("#{UPLOAD_DIR}/#{filename}", "w") do |f|
               f.puts uploaded_file.read
             end
