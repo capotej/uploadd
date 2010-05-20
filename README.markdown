@@ -5,7 +5,6 @@ Minimal file upload daemon using [Rainbows](http://rainbows.rubyforge.org)
 ### Installation
 
     gem install rainbows
-    gem install rack
     gem install rack-contrib
     git clone git://github.com/capotej/uploadd.git
 
@@ -15,7 +14,7 @@ Edit `config.ru` and change `SECRET` to something secure, like the word "passwor
     
 ### Running
     cd /path/to/uploadd
-    nohup rainbows
+    nohup rainbows &
 
 That's it! Now you should have a scalable upload server running on `:8080`
 
