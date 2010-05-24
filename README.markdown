@@ -26,9 +26,8 @@ Here's an example of how to use it (requires `httpclient` gem):
 
 ### But is it fast?
 
-Video of the logs with 10 workers uploading images from another server
+[Video](http://www.twitvid.com/QQ9ZC) of the logs with 10 workers uploading images from another server
 
-<object width="425" height="344"><param name="movie" value="http://www.twitvid.com/player/QQ9ZC"></param><param name="allowscriptaccess" value="always"></param><param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.twitvid.com/player/QQ9ZC" quality="high" allowscriptaccess="always" allowNetworking="all" allowfullscreen="true" wmode="transparent" height="344" width="425"></object>
 
 ### Notes
 Uploadd was written to be as simple as possible so it doesn't check for duplicates, it just overwrites. You can feed the filename param a deep directory structure and it'll create all the directories for you *below* the `UPLOAD_DIR` in `config.ru`
